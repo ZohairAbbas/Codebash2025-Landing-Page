@@ -33,9 +33,13 @@
   --sidebar: oklch(0.24 0 0); /* Dark gray sidebar */
   --sidebar-foreground: oklch(1 0 0); /* White sidebar text */
   --sidebar-primary: oklch(0.42 0.19 15); /* Crimson red sidebar primary */
-  --sidebar-primary-foreground: oklch(1 0 0); /* White text on sidebar primary */
+  --sidebar-primary-foreground: oklch(
+    1 0 0
+  ); /* White text on sidebar primary */
   --sidebar-accent: oklch(0.8 0.12 85); /* Golden yellow sidebar accent */
-  --sidebar-accent-foreground: oklch(0.24 0 0); /* Dark gray text on sidebar accent */
+  --sidebar-accent-foreground: oklch(
+    0.24 0 0
+  ); /* Dark gray text on sidebar accent */
   --sidebar-border: oklch(0.269 0 0); /* Dark gray sidebar border */
   --sidebar-ring: oklch(0.42 0.19 15 / 0.5); /* Crimson red sidebar ring */
 }
@@ -120,6 +124,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+    @apply bg-background text-foreground bg-black;
   }
 }

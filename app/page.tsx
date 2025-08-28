@@ -1,12 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import Link from "next/link"
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
-  const [activeTab, setActiveTab] = useState("junior")
+  const [activeTab, setActiveTab] = useState("junior");
 
   return (
     <div className="min-h-screen bg-background">
@@ -19,7 +18,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-
           {/* Competition Selection Tabs */}
           <div className="bg-black/60 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Choose Your Competition</h2>
@@ -56,20 +54,36 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-12">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">CODE BASH 2.0</h3>
-            <p className="text-background/80 max-w-2xl mx-auto">
-              Join the ultimate competitive programming challenge. Push your limits, showcase your skills, and compete
-              for glory.
-            </p>
+      <footer className="bg-primary text-background py-10 mt-auto shadow-inner">
+        <div className="container mx-auto px-4 text-center flex flex-col items-center">
+          <div className="flex gap-6 items-center justify-center mb-4">
+            <Link
+              href="https://www.instagram.com/kpsiaj_youth/"
+              target="_blank"
+              className="hover:scale-110 transition-transform cursor-pointer"
+            >
+              <Image
+                src="/youth-logo.png"
+                alt="Instagram"
+                width={96}
+                height={96}
+                className="rounded-full border-2 border-background shadow"
+              />
+            </Link>
           </div>
-          <div className="text-sm text-background/60">
-            © 2025 CODEBASH. All rights reserved.
+          <div className="mb-2 text-base flex flex-wrap justify-center">
+            <a href="mailto:codebash@kpsiaj.org" className="underline">
+              📩 codebash@kpsiaj.org
+            </a>
+            <span className="">
+              | 📍 Organized by <b>KPSIAJ Youth Forum</b>
+            </span>
+          </div>
+          <div className="text-xs text-background/70 mt-2">
+            &copy; 2025 CodeBash 2.0. All Rights Reserved.
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
