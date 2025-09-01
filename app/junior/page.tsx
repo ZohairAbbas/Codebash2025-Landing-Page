@@ -8,33 +8,42 @@ import { Users, Trophy, Code, Zap, Cookie } from "lucide-react";
 
 const itinerary = [
   {
-    time: "02:00 PM",
+    time: "03:00 PM – 03:15 PM",
     event: "Registration & Check-in",
-    description: "Welcome & registration of junior participants",
+    description:
+      "Arrival, welcome, and registration of all junior participants.",
     icon: <Users className="w-6 h-6 text-primary" />,
   },
   {
-    time: "02:30 PM",
-    event: "Opening Ceremony",
-    description: "Introduction, Contest rules and platform walkthrough",
+    time: "03:15 PM – 03:30 PM",
+    event: "Orientation & Rules",
+    description: "Briefing on contest rules, platform walkthrough, and Q&A.",
     icon: <Trophy className="w-6 h-6 text-yellow-500" />,
   },
   {
-    time: "03:00 PM",
-    event: "Junior Contest Begins",
-    description: "30 mins platform exploration & 2-hour Scratch Challenge",
+    time: "03:30 PM – 04:00 PM",
+    event: "Scratch Exploration",
+    description: "Hands-on time to explore Scratch and test your equipment.",
     icon: <Code className="w-6 h-6 text-blue-500" />,
   },
   {
-    time: "05:30 PM",
-    event: "Contest Ends",
-    description: "Final submissions and judging begins",
+    time: "04:00 PM – 06:00 PM",
+    event: "Junior Contest",
+    description:
+      "2-hour Scratch challenge. Receive your task and marking criteria.",
+    icon: <Trophy className="w-6 h-6 text-yellow-500" />,
+  },
+  {
+    time: "06:00 PM – 06:15 PM",
+    event: "Submission & Certificates",
+    description:
+      "Submit your project via Google Form and receive your certificate.",
     icon: <Zap className="w-6 h-6 text-orange-500" />,
   },
   {
-    time: "06:00 PM",
+    time: "06:15 PM – 06:30 PM",
     event: "Refreshments",
-    description: "Snacks and social time",
+    description: "Enjoy snacks and social time with fellow participants.",
     icon: <Cookie className="w-6 h-6 text-pink-500" />,
   },
 ];
@@ -262,6 +271,11 @@ export default function JuniorCompetition() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">
             🗓️ Event Schedule (13th September 2025)
           </h2>
+          <p className="text-center text-base md:text-lg text-gray-700 mb-8">
+            <span className="font-semibold text-pink-600">Note:</span> If we
+            receive more than 50 registrations, the contest may be divided into
+            two slots to ensure a smooth experience for all participants.
+          </p>
           <div className="max-w-3xl mx-auto space-y-6">
             {itinerary.map((item, index) => (
               <div
@@ -282,6 +296,117 @@ export default function JuniorCompetition() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white/90 text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-pink-600">
+            📝 How the Competition Works
+          </h2>
+          <div className="max-w-2xl mx-auto text-lg md:text-xl mb-6 font-medium text-gray-800">
+            <p className="mb-4">
+              This is a{" "}
+              <span className="font-bold text-pink-600">
+                task-based competition
+              </span>{" "}
+              designed to spark creativity and logical thinking.
+            </p>
+            <ul className="list-disc list-inside text-left mb-4">
+              <li className="mb-2">
+                Each participant will be assigned a desktop computer with
+                Scratch installed.
+              </li>
+              <li className="mb-2">
+                You’ll have <span className="font-bold">30 minutes</span> to
+                explore Scratch and check your equipment.
+              </li>
+              <li className="mb-2">
+                After the warm-up, you’ll receive your{" "}
+                <span className="font-bold">task on paper</span> (with pen for
+                brainstorming) and the marking criteria.
+              </li>
+              <li className="mb-2">
+                You’ll have <span className="font-bold">2 hours</span> to
+                complete your Scratch project.
+              </li>
+              <li className="mb-2">
+                Once time is up, internet access will be provided so you can
+                submit your file via Google Form as an attachment.
+              </li>
+            </ul>
+            <p className="mb-4 text-blue-700 font-medium">
+              <span className="font-semibold">Note:</span> Your assigned
+              location and contest slot will be communicated in your
+              confirmation message before 10th September.
+            </p>
+            <p>
+              Use your creativity, logic, and problem-solving skills to impress
+              the judges!
+            </p>
+            <p className="mt-6">
+              <a
+                href="https://docs.google.com/document/d/1MUsumX4iv5fhqKKThKD2BU6-qf6b9rTv5RKbiVKUv_I/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline font-semibold"
+              >
+                Read the full Code of Conduct here
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources Section */}
+      <section className="py-10 bg-card text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-700">
+            📚 Resources & Practice
+          </h2>
+          <p className="text-lg mb-6">
+            Prepare for the competition with these helpful resources and
+            tutorials.
+          </p>
+          <div className="flex flex-col items-center gap-6 mb-6">
+            {/* Embedded YouTube Video */}
+            <div className="w-full flex justify-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NqMd44Oi2l4?si=nCMwOVJeWj7xoklS"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="rounded-lg shadow-lg"
+              ></iframe>
+            </div>
+            {/* Resource Links */}
+            <ul className="max-w-xl mx-auto text-left list-disc list-inside text-base md:text-lg font-medium">
+              <li>
+                <a
+                  href="https://scratch.mit.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline"
+                >
+                  Scratch Official Website
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=D-nW4jvzRr8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline"
+                >
+                  Scratch Tutorials on YouTube
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -8,45 +8,52 @@ import { Users, Trophy, Code, Cookie, Utensils } from "lucide-react";
 
 const itinerary = [
   {
-    time: "03:00 PM",
-    event: "Registration & Check-in",
-    description: "Welcome and team registration for senior participants",
+    time: "03:00 PM – 03:30 PM",
+    event: "Registration & Team Check-in",
+    description:
+      "Teams arrive, complete registration, and settle in for the contest. Get your laptops ready and meet fellow participants.",
     icon: <Users className="w-6 h-6 text-primary" />,
   },
   {
-    time: "03:30 PM",
-    event: "Opening Ceremony",
-    description: "Introduction, Contest rules and platform walkthrough",
+    time: "03:30 PM – 04:30 PM",
+    event: "Opening Ceremony & Briefing",
+    description:
+      "Kick off with a warm welcome, contest overview, rules explanation, and platform walkthrough. Clarify any last-minute questions.",
     icon: <Trophy className="w-6 h-6 text-yellow-500" />,
   },
   {
-    time: "04:30 PM",
-    event: "Round 1 Begins",
-    description: "2-hour competitive programming challenge",
+    time: "04:30 PM – 06:30 PM",
+    event: "Round 1: Programming Challenge",
+    description:
+      "First 2-hour round. Solve a set of algorithmic and logic problems as a team. Submit your solutions before the timer ends.",
     icon: <Code className="w-6 h-6 text-blue-500" />,
   },
   {
-    time: "06:30 PM",
-    event: "Refreshment & Namaz Break",
-    description: "Break for refreshments and prayers",
+    time: "06:30 PM – 07:30 PM",
+    event: "Refreshments & Namaz Break",
+    description:
+      "Enjoy snacks and drinks, take a break, and offer prayers. Network with other teams and discuss strategies.",
     icon: <Cookie className="w-6 h-6 text-pink-500" />,
   },
   {
-    time: "07:30 PM",
-    event: "Round 2 Begins",
-    description: "2-hour competitive programming challenge",
+    time: "07:30 PM – 09:30 PM",
+    event: "Round 2: Programming Challenge",
+    description:
+      "Second 2-hour round. Tackle a new set of problems, test your teamwork, and race against the clock for top scores.",
     icon: <Trophy className="w-6 h-6 text-yellow-500" />,
   },
   {
-    time: "09:30 PM",
-    event: "Dinner",
-    description: "Dinner for all participants",
+    time: "09:30 PM – 10:30 PM",
+    event: "Dinner & Social",
+    description:
+      "Relax and enjoy a delicious dinner with all participants. Share experiences and celebrate your achievements.",
     icon: <Utensils className="w-6 h-6 text-green-600" />,
   },
   {
-    time: "10:00 PM",
-    event: "Closing Ceremony",
-    description: "Results & Prize Distribution",
+    time: "10:30 PM",
+    event: "Closing Ceremony & Awards",
+    description:
+      "Results announcement, prize distribution for both categories, and closing remarks. Capture memories and say farewell!",
     icon: <Trophy className="w-6 h-6 text-yellow-500" />,
   },
 ];
@@ -291,6 +298,95 @@ export default function SeniorCompetition() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Competition Details */}
+      <section className="py-12 bg-white/90 text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-700">
+            🏁 Competition Details
+          </h2>
+          <div className="max-w-2xl mx-auto text-lg md:text-xl mb-6 font-medium text-gray-800">
+            <p className="mb-4">
+              <span className="font-bold text-pink-600">Rising Experts</span> is
+              a speed programming competition designed to test your logic
+              building and coding speed. You may use any of the listed
+              programming languages.
+            </p>
+            <p className="mb-4">
+              <span className="font-bold">Format:</span> Two-round competitive
+              programming challenge focused on speed, logic, and coding mastery.
+            </p>
+            <ul className="list-disc list-inside text-left mb-4">
+              <li className="mb-2">
+                <span className="font-bold">Round 1:</span> All registered teams
+                will face 6–8 programming problems revealed at the start of the
+                round.
+              </li>
+              <li className="mb-2">
+                <span className="font-bold">Round 2 (Final):</span>{" "}
+                Top-performing teams will advance to face another 6–8 more
+                complex problems.
+              </li>
+              <li className="mb-2">
+                Problems are revealed only at the start of each round, ensuring
+                fairness and testing adaptability under time pressure.
+              </li>
+              <li className="mb-2">
+                You will also receive a printout of your problems.
+              </li>
+            </ul>
+            <p className="mb-4">
+              <span className="font-bold">Venue:</span> Arranged by Khoja Jamaat
+              Karachi with high-speed internet and facilities. Each team must
+              bring <span className="font-bold">one laptop</span> with a
+              pre-installed IDE (only one laptop allowed per team).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Code of Conduct & Judging Criteria */}
+      <section className="py-10 bg-card text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-pink-600">
+            📄 Code of Conduct & Judging Criteria
+          </h2>
+          <p className="text-lg mb-6 font-medium text-gray-800">
+            All participants must follow the event’s code of conduct and judging
+            guidelines to ensure a fair and respectful competition.
+          </p>
+          <div className="max-w-2xl mx-auto text-left text-base md:text-lg font-medium mb-6">
+            <h3 className="font-bold text-blue-700 mb-2">Judging Criteria</h3>
+            <ul className="list-disc list-inside mb-4">
+              <li>
+                Correctness – Must produce correct results for all test cases.
+              </li>
+              <li>
+                Time Efficiency – Code must run within required execution time.
+              </li>
+              <li>
+                Memory Efficiency – Code must meet memory usage constraints.
+              </li>
+              <li>
+                Submission Time – Faster correct submissions rank higher if
+                scores are tied.
+              </li>
+              <li>
+                Code Quality (Tie-Breaker) – Readability, structured logic, and
+                coding best practices may be considered.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://docs.google.com/document/d/1ED67s2Zg1GqwcH-BumGamGxmrbh2SUwZphBXes5LwvY/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline font-semibold"
+          >
+            Read the full Code of Conduct here
+          </a>
         </div>
       </section>
 
