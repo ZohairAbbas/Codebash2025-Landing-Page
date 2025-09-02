@@ -8,40 +8,40 @@ import { Users, Trophy, Code, Zap, Cookie } from "lucide-react";
 
 const itinerary = [
   {
-    time: "03:00 PM – 03:15 PM",
+    time: "03:30 PM – 03:45 PM",
     event: "Registration & Check-in",
     description:
       "Arrival, welcome, and registration of all junior participants.",
     icon: <Users className="w-6 h-6 text-primary" />,
   },
   {
-    time: "03:15 PM – 03:30 PM",
+    time: "03:45 PM – 04:00 PM",
     event: "Orientation & Rules",
     description: "Briefing on contest rules, platform walkthrough, and Q&A.",
     icon: <Trophy className="w-6 h-6 text-yellow-500" />,
   },
   {
-    time: "03:30 PM – 04:00 PM",
+    time: "04:00 PM - 04:30 PM",
     event: "Scratch Exploration",
     description: "Hands-on time to explore Scratch and test your equipment.",
     icon: <Code className="w-6 h-6 text-blue-500" />,
   },
   {
-    time: "04:00 PM – 06:00 PM",
+    time: "04:30 PM – 06:30 PM",
     event: "Junior Contest",
     description:
       "2-hour Scratch challenge. Receive your task and marking criteria.",
     icon: <Trophy className="w-6 h-6 text-yellow-500" />,
   },
   {
-    time: "06:00 PM – 06:15 PM",
+    time: "06:30 PM – 06:45 PM",
     event: "Submission & Certificates",
     description:
       "Submit your project via Google Form and receive your certificate.",
     icon: <Zap className="w-6 h-6 text-orange-500" />,
   },
   {
-    time: "06:15 PM – 06:30 PM",
+    time: "06:45 PM – 07:00 PM",
     event: "Refreshments",
     description: "Enjoy snacks and social time with fellow participants.",
     icon: <Cookie className="w-6 h-6 text-pink-500" />,

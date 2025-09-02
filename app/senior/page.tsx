@@ -301,11 +301,11 @@ export default function SeniorCompetition() {
         </div>
       </section>
 
-      {/* Competition Details */}
+      {/* Competition Details & Learning Resources */}
       <section className="py-12 bg-white/90 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-700">
-            🏁 Competition Details
+            🏁 Competition Details & Learning Resources
           </h2>
           <div className="max-w-2xl mx-auto text-lg md:text-xl mb-6 font-medium text-gray-800">
             <p className="mb-4">
@@ -343,6 +343,43 @@ export default function SeniorCompetition() {
               bring <span className="font-bold">one laptop</span> with a
               pre-installed IDE (only one laptop allowed per team).
             </p>
+            <div className="mt-8">
+              <h3 className="font-bold text-blue-700 mb-2">
+                Recommended Practice Platforms
+              </h3>
+              <ul className="list-disc list-inside text-left text-base md:text-lg font-medium">
+                <li>
+                  <a
+                    href="https://codeforces.com/problemset"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline"
+                  >
+                    Codeforces
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.codechef.com/practice#algorithms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline"
+                  >
+                    CodeChef
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.hackerrank.com/domains/algorithms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline"
+                  >
+                    HackerRank
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -416,7 +453,7 @@ export default function SeniorCompetition() {
           <ul className="max-w-md mx-auto mb-6 text-base md:text-lg list-disc list-inside text-left font-medium">
             <li>Shia community members aged 16–23</li>
             <li>Intermediate, A Levels, or Undergraduate programs</li>
-            <li>Team of 2–3 participants</li>
+            <li>Teams may consist of 1 to 3 participants</li>{" "}
           </ul>
           <Link href="#faqs">
             <Button variant="outline" size="sm" className="cursor-pointer">
