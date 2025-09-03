@@ -41,7 +41,7 @@ const itinerary = [
     icon: <Zap className="w-6 h-6 text-orange-500" />,
   },
   {
-    time: "06:45 PM – 07:00 PM",
+    time: "06:45 PM – 07:0 PM",
     event: "Refreshments",
     description: "Enjoy snacks and social time with fellow participants.",
     icon: <Cookie className="w-6 h-6 text-pink-500" />,
@@ -118,7 +118,7 @@ const faqs = [
   {
     question: "How can I practice before the competition?",
     answer:
-      "You can practice on: Scratch official website (Scratch - Imagine, Program, Share), Scratch tutorials on YouTube, Beginner courses on Khan Academy – Computer Science basics",
+      "You can practice on: Scratch official website (Scratch - https://scratch.mit.edu/) and Scratch tutorials on YouTube",
   },
   {
     question: "How will the winners be announced?",

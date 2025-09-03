@@ -70,11 +70,6 @@ const faqs = [
       "Yes, at least one team member must have prior coding experience in one of the allowed languages. The contest is designed to test problem-solving, teamwork, and speed programming skills.",
   },
   {
-    question: "Is the competition individual or team-based?",
-    answer:
-      "It is strictly a team contest. Each team must have 2–3 members. Solo participation is not allowed.",
-  },
-  {
     question: "What should teams bring on competition day?",
     answer:
       "Each team must bring one laptop only with a pre-installed IDE of their choice",
@@ -453,7 +448,7 @@ export default function SeniorCompetition() {
           <ul className="max-w-md mx-auto mb-6 text-base md:text-lg list-disc list-inside text-left font-medium">
             <li>Shia community members aged 16–23</li>
             <li>Intermediate, A Levels, or Undergraduate programs</li>
-            <li>Teams may consist of 1 to 3 participants</li>{" "}
+            <li>Teams may consist of 1 to 3 participants</li>
           </ul>
           <Link href="#faqs">
             <Button variant="outline" size="sm" className="cursor-pointer">
